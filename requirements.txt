@@ -1,0 +1,7 @@
+pandas
+scikit-learn
+datasets>=3.0
+pdfplumber>=0.11
+python-dotenv
+jupyter
+matplotlib

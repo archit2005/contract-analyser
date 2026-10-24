@@ -1,0 +1,95 @@
+text,clause_type,risk
+A late fee of Rs. 1000 per day shall be charged if rent is not received by the 10th.,Rent,Risky
+"The monthly rent for the premises shall be Rs. 10,000, payable on or before the 10th of every month.",Rent,Normal
+You shall not solicit the Company's clients or employees for six months after leaving.,Non-compete,Normal
+Either party may terminate employment by serving a notice period of 3 month(s) or salary in lieu of notice.,Termination,Normal
+The entire security deposit shall be forfeited if the Tenant vacates before the end of the lock-in period.,Deposit,Risky
+"If the Tenant leaves within the lock-in period of 6 months, rent for the remaining lock-in period shall be payable.",Lock-in,Risky
+"You will undergo training and must serve the Company for 2 years, failing which you shall pay Rs. 275,000 as training cost.",Salary,Risky
+"The Tenant has paid an interest-free refundable security deposit of Rs. 22,000, to be returned at the end of the tenancy.",Deposit,Normal
+"The Tenant has paid an interest-free refundable security deposit of Rs. 11,000, to be returned at the end of the tenancy.",Deposit,Normal
+"The Licensee shall pay a monthly licence fee of Rs. 46,000 in advance by bank transfer.",Rent,Normal
+"The Landlord may terminate this agreement with 3 days' notice, whereas the Tenant must give 1 months' notice.",Termination,Risky
+A late fee of Rs. 200 per day shall be charged if rent is not received by the 5th.,Rent,Risky
+"The Company may withhold your final salary until all obligations are fulfilled, at its sole discretion.",Salary,Risky
+The rent shall increase by 20% every six months without any prior notice to the Tenant.,Rent,Risky
+Either party may terminate this agreement by giving 1 month(s) written notice to the other party.,Termination,Normal
+"Rent of Rs. 32,000 per month shall be increased by 5% every eleven months upon renewal.",Rent,Normal
+A late fee of Rs. 500 per day shall be charged if rent is not received by the 5th.,Rent,Risky
+"The monthly rent for the premises shall be Rs. 28,000, payable on or before the 5th of every month.",Rent,Normal
+"The Licensee shall deposit Rs. 13,000, refundable on handover of the premises in good condition.",Deposit,Normal
+"Your annual cost to company (CTC) shall be Rs. 600,000, payable monthly after statutory deductions.",Salary,Normal
+The Tenant shall not vacate the premises during the initial lock-in period of 3 months.,Lock-in,Normal
+"The Licensee shall deposit Rs. 16,000, refundable on handover of the premises in good condition.",Deposit,Normal
+"You shall pay damages of Rs. 150,000 for any breach of confidentiality, regardless of actual loss.",Confidentiality,Risky
+The Company may terminate your employment without notice or compensation at any time.,Termination,Risky
+"The monthly rent for the premises shall be Rs. 48,000, payable on or before the 5th of every month.",Rent,Normal
+"The Tenant is bound by a lock-in of 11 months, while the Landlord may terminate at any time.",Lock-in,Risky
+"The security deposit of Rs. 480,000 equal to 8 months' rent is non-refundable.",Deposit,Risky
+The society maintenance charges shall be paid by the Landlord.,Maintenance,Normal
+"All work created by you, including personal projects made outside working hours, shall belong to the Company.",Confidentiality,Risky
+The Landlord shall repair any plumbing or electrical faults within seven days of being informed.,Maintenance,Normal
+The Landlord may deduct any amount from the deposit at his discretion without providing reasons.,Deposit,Risky
+"You will undergo training and must serve the Company for 3 years, failing which you shall pay Rs. 100,000 as training cost.",Salary,Risky
+"The security deposit of Rs. 160,000 equal to 8 months' rent is non-refundable.",Deposit,Risky
+The rent shall increase by 25% every six months without any prior notice to the Tenant.,Rent,Risky
+Minor repairs up to Rs. 1000 shall be borne by the Tenant; major structural repairs shall be borne by the Landlord.,Maintenance,Normal
+The Tenant shall not vacate the premises during the initial lock-in period of 6 months.,Lock-in,Normal
+"During your employment, you shall not take up any other employment without written consent of the Company.",Non-compete,Normal
+"You shall pay damages of Rs. 350,000 for any breach of confidentiality, regardless of actual loss.",Confidentiality,Risky
+"The security deposit equal to two months' rent shall be refunded within 30 days of vacating, after lawful deductions.",Deposit,Normal
+You shall not join any competitor of the Company in any capacity for 1 years after leaving employment.,Non-compete,Risky
+"For 1 years after termination, you shall not engage in any business similar to that of the Company anywhere in India.",Non-compete,Risky
+"The Tenant agrees to pay Rs. 41,000 as monthly rent, exclusive of electricity and water charges.",Rent,Normal
+The Tenant shall not vacate the premises during the initial lock-in period of 11 months.,Lock-in,Normal
+"The Licensee shall pay a monthly licence fee of Rs. 32,000 in advance by bank transfer.",Rent,Normal
+"Rent of Rs. 59,000 per month shall be increased by 8% every eleven months upon renewal.",Rent,Normal
+"The security deposit of Rs. 270,000 equal to 6 months' rent is non-refundable.",Deposit,Risky
+"You will undergo training and must serve the Company for 2 years, failing which you shall pay Rs. 125,000 as training cost.",Salary,Risky
+"The Licensee shall pay a monthly licence fee of Rs. 37,000 in advance by bank transfer.",Rent,Normal
+This agreement may be terminated by mutual consent of both parties in writing.,Termination,Normal
+"The Tenant agrees to pay Rs. 24,000 as monthly rent, exclusive of electricity and water charges.",Rent,Normal
+"The Tenant has paid an interest-free refundable security deposit of Rs. 37,000, to be returned at the end of the tenancy.",Deposit,Normal
+"Rent of Rs. 17,000 per month shall be increased by 10% every eleven months upon renewal.",Rent,Normal
+You shall not join any competitor of the Company in any capacity for 3 years after leaving employment.,Non-compete,Risky
+"You shall be entitled to a performance bonus as per company policy, reviewed annually.",Salary,Normal
+Salary shall be credited to your bank account on the last working day of each month.,Salary,Normal
+"The security deposit of Rs. 280,000 equal to 10 months' rent is non-refundable.",Deposit,Risky
+"A joining bonus of Rs. 65,000 shall be recovered in full if you leave within 3 years.",Salary,Risky
+"The Tenant agrees to pay Rs. 50,000 as monthly rent, exclusive of electricity and water charges.",Rent,Normal
+Painting charges of one month's rent shall be deducted from the deposit regardless of the condition of the premises.,Deposit,Risky
+"A joining bonus of Rs. 85,000 shall be recovered in full if you leave within 3 years.",Salary,Risky
+"You shall pay damages of Rs. 230,000 for any breach of confidentiality, regardless of actual loss.",Confidentiality,Risky
+"For 2 years after termination, you shall not engage in any business similar to that of the Company anywhere in India.",Non-compete,Risky
+"The Licensee shall deposit Rs. 10,000, refundable on handover of the premises in good condition.",Deposit,Normal
+Confidential information shall not include information that is publicly available.,Confidentiality,Normal
+"The Tenant shall keep the premises clean and in good condition, subject to normal wear and tear.",Maintenance,Normal
+"The Landlord may terminate this agreement with 7 days' notice, whereas the Tenant must give 3 months' notice.",Termination,Risky
+"The Tenant has paid an interest-free refundable security deposit of Rs. 25,000, to be returned at the end of the tenancy.",Deposit,Normal
+"The Tenant agrees to pay Rs. 36,000 as monthly rent, exclusive of electricity and water charges.",Rent,Normal
+"The Landlord may terminate this agreement with 3 days' notice, whereas the Tenant must give 2 months' notice.",Termination,Risky
+"The Tenant shall bear all society maintenance, property tax and major appliance replacement costs.",Maintenance,Risky
+A mutual lock-in period of 3 months shall apply from the commencement date.,Lock-in,Normal
+"The Landlord may terminate this agreement with 3 days' notice, whereas the Tenant must give 3 months' notice.",Termination,Risky
+The Landlord may revise the rent at any time during the tenancy at his sole discretion.,Rent,Risky
+"The Licensee shall deposit Rs. 21,000, refundable on handover of the premises in good condition.",Deposit,Normal
+"Your annual cost to company (CTC) shall be Rs. 1,350,000, payable monthly after statutory deductions.",Salary,Normal
+"Rent of Rs. 33,000 per month shall be increased by 8% every eleven months upon renewal.",Rent,Normal
+"The monthly rent for the premises shall be Rs. 34,000, payable on or before the 5th of every month.",Rent,Normal
+Either party may terminate employment by serving a notice period of 1 month(s) or salary in lieu of notice.,Termination,Normal
+"If the Tenant leaves within the lock-in period of 11 months, rent for the remaining lock-in period shall be payable.",Lock-in,Risky
+"A joining bonus of Rs. 90,000 shall be recovered in full if you leave within 2 years.",Salary,Risky
+"The Licensee shall pay a monthly licence fee of Rs. 15,000 in advance by bank transfer.",Rent,Normal
+"If the Tenant leaves within the lock-in period of 3 months, rent for the remaining lock-in period shall be payable.",Lock-in,Risky
+"Upon termination, the Tenant shall hand over vacant and peaceful possession of the premises.",Termination,Normal
+Either party may terminate this agreement by giving 3 month(s) written notice to the other party.,Termination,Normal
+The Tenant shall not disclose the terms of this agreement except as required by law.,Confidentiality,Normal
+You shall keep all confidential information of the Company strictly confidential during and after employment.,Confidentiality,Normal
+"Your annual cost to company (CTC) shall be Rs. 450,000, payable monthly after statutory deductions.",Salary,Normal
+The Landlord may evict the Tenant immediately without notice for any reason whatsoever.,Termination,Risky
+"A joining bonus of Rs. 40,000 shall be recovered in full if you leave within 2 years.",Salary,Risky
+"You shall pay damages of Rs. 220,000 for any breach of confidentiality, regardless of actual loss.",Confidentiality,Risky
+Both parties agree to a lock-in period of 3 months during which neither party may terminate.,Lock-in,Normal
+"Your annual cost to company (CTC) shall be Rs. 500,000, payable monthly after statutory deductions.",Salary,Normal
+Both parties agree to a lock-in period of 11 months during which neither party may terminate.,Lock-in,Normal
+"All repairs of any nature, including structural repairs, shall be borne entirely by the Tenant.",Maintenance,Risky
