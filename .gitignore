@@ -3,3 +3,6 @@ venv/
 __pycache__/
 chroma_db/
 *.pyc
+app/model_clause_type/
+app/model_risk/
+*.zip

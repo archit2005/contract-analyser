@@ -138,3 +138,52 @@ The Employee shall not work for any client of the Company for five years after l
 The Licensor shall refund the deposit within 15 days of vacating; delayed refunds shall carry 12% annual interest.,Deposit,Normal
 "Working hours shall be 9 hours per day, five days a week, with overtime paid as per company policy.",Salary,Normal
 "The Employee shall work whatever hours the manager decides, including weekends, without any extra pay.",Salary,Risky
+The flat owner shall repair any water leakage at his own cost.,Maintenance,Normal
+The owner will pay for fixing plumbing and electrical faults that are not caused by the tenant.,Maintenance,Normal
+"Structural repairs, including roof and wall seepage, are the owner's responsibility.",Maintenance,Normal
+The house owner will get the water tank and pipes repaired at his expense.,Maintenance,Normal
+The owner shall replace any appliance provided by him that stops working due to age.,Maintenance,Normal
+"Society maintenance charges, property tax and building repairs shall be paid by the flat owner.",Maintenance,Normal
+The owner will arrange pest control once a year at his own cost.,Maintenance,Normal
+The flat owner shall get the premises painted before the tenant moves in.,Maintenance,Normal
+The tenant shall bear the cost of fixing any water leakage in the flat.,Maintenance,Risky
+"The tenant must pay for all repairs, including those caused by old wiring or pipes.",Maintenance,Risky
+The house owner will not be responsible for any repairs during the tenancy.,Maintenance,Risky
+The tenant shall pay the society maintenance charges and property tax on behalf of the owner.,Maintenance,Risky
+The owner will refund the full deposit within 15 days after the tenant vacates.,Deposit,Normal
+The flat owner may deduct only unpaid rent and actual damage from the deposit.,Deposit,Normal
+The owner may keep the deposit if he is not satisfied with the condition of the flat.,Deposit,Risky
+The house owner will return the deposit only after a new tenant is found.,Deposit,Risky
+The owner shall give the tenant at least one month's notice before asking him to vacate.,Termination,Normal
+The flat owner can ask the tenant to leave at any time without giving a reason.,Termination,Risky
+The owner will increase the rent by 5% only at the time of renewal.,Rent,Normal
+The house owner may raise the rent whenever he wants during the agreement.,Rent,Risky
+The owner shall visit the flat only after informing the tenant a day in advance.,Maintenance,Normal
+The flat owner can enter the flat whenever he wants without informing the tenant.,Maintenance,Risky
+"If the owner wants the flat back during the lock-in, he shall pay the tenant one month's rent as compensation.",Lock-in,Normal
+"The lock-in applies only to the tenant, and the owner may end the agreement anytime.",Lock-in,Risky
+"Your annual CTC will be Rs. 6,50,000, including basic pay, HRA and allowances.",Salary,Normal
+Your salary will be paid on or before the 7th of every month.,Salary,Normal
+"Your salary will be reviewed every year, based on your performance.",Salary,Normal
+The company will reimburse travel expenses incurred for official work.,Salary,Normal
+PF and gratuity will be provided as per applicable law.,Salary,Normal
+The company may reduce your salary at any time without informing you.,Salary,Risky
+Your variable pay will be decided entirely at the management's discretion and may be zero.,Salary,Risky
+"If you leave within one year, the full relocation allowance must be repaid.",Salary,Risky
+"You must sign a service bond of Rs. 3,00,000 and work for us for three years.",Salary,Risky
+"Your probation period is six months, after which you will be confirmed based on performance.",Termination,Normal
+"During probation, either you or the company may end employment with 15 days' notice.",Termination,Normal
+"After confirmation, the notice period is 60 days for both sides.",Termination,Normal
+The company may terminate your employment immediately without notice if you are on probation.,Termination,Risky
+"Your notice period is 90 days, but the company can relieve you with just one day's notice.",Termination,Risky
+Your probation may be extended by the company for any length of time without reason.,Termination,Risky
+The company will not issue a relieving letter unless you serve the full notice period.,Termination,Risky
+You will not disclose company data or client details to anyone outside the company.,Confidentiality,Normal
+"Inventions made using company resources, during working hours, belong to the company.",Confidentiality,Normal
+You must return your laptop and ID card on your last working day.,Confidentiality,Normal
+"Everything you create while employed here belongs to the company, even weekend personal projects.",Confidentiality,Risky
+You cannot mention your role or projects at this company on your resume or LinkedIn.,Confidentiality,Risky
+"While working here, you may not take up any other paid job without written permission.",Non-compete,Normal
+You will not approach our clients that you handled for six months after leaving.,Non-compete,Normal
+You cannot join any IT company in India for two years after you resign.,Non-compete,Risky
+"After leaving, you cannot do freelance work in the same field for three years.",Non-compete,Risky
