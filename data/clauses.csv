@@ -93,3 +93,48 @@ Both parties agree to a lock-in period of 3 months during which neither party ma
 "Your annual cost to company (CTC) shall be Rs. 500,000, payable monthly after statutory deductions.",Salary,Normal
 Both parties agree to a lock-in period of 11 months during which neither party may terminate.,Lock-in,Normal
 "All repairs of any nature, including structural repairs, shall be borne entirely by the Tenant.",Maintenance,Risky
+"The Licensee shall carry out minor repairs such as replacing bulbs, taps and switches at its own cost.",Maintenance,Normal
+The Licensor shall bear the cost of all structural repairs including leakage and seepage.,Maintenance,Normal
+"Property tax, municipal charges and building insurance shall be paid by the Licensor.",Maintenance,Normal
+The Licensee shall pay electricity and gas bills directly to the service providers as per actual consumption.,Maintenance,Normal
+"The Licensee shall return the premises in the same condition as received, subject to normal wear and tear.",Maintenance,Normal
+"The Licensor may enter the premises for inspection or repairs at reasonable times, after giving two days' written notice.",Maintenance,Normal
+The Licensee shall not make any structural alterations to the premises without the Licensor's written consent.,Maintenance,Normal
+"The Licensee shall bear the full cost of repairing or replacing any appliance, including the air conditioner and geyser, regardless of age.",Maintenance,Risky
+The Licensor may enter the premises at any time without notice for inspection.,Maintenance,Risky
+"The Tenant shall pay for repainting the entire flat at the time of vacating, irrespective of its condition.",Maintenance,Risky
+Neither party shall terminate this agreement during the lock-in period of 11 months from the date of commencement.,Lock-in,Normal
+"After the lock-in period ends, either party may terminate the agreement by giving one month's notice.",Lock-in,Normal
+The lock-in period shall apply equally to both the Licensor and the Licensee.,Lock-in,Normal
+"If the Licensor terminates during the lock-in period, the Licensor shall compensate the Licensee for the remaining lock-in months.",Lock-in,Normal
+"If the Licensee vacates during the lock-in period, the Licensee shall pay licence fees for the entire unexpired lock-in period.",Lock-in,Risky
+The lock-in period shall bind only the Tenant and not the Landlord.,Lock-in,Risky
+"The Tenant shall forfeit three months' rent as a penalty for leaving during the lock-in, in addition to losing the deposit.",Lock-in,Risky
+The Employee shall not disclose any confidential information or trade secrets of the Company to any third party.,Confidentiality,Normal
+Confidentiality obligations shall continue for two years after the end of employment.,Confidentiality,Normal
+"On leaving, the Employee shall return all company documents, laptops and data in their possession.",Confidentiality,Normal
+"Information that is already public, or that the Employee knew before joining, is not considered confidential.",Confidentiality,Normal
+The Employee may disclose confidential information if required to do so by a court or government authority.,Confidentiality,Normal
+The Employee shall not post any information about the Company's clients on social media.,Confidentiality,Normal
+"Any idea, invention or code developed by the Employee at any time, even outside work and unrelated to the job, belongs to the Company.",Confidentiality,Risky
+The Employee shall be bound by confidentiality obligations forever and shall not discuss their past role with any future employer.,Confidentiality,Risky
+"The Company may deduct any amount from the Employee's salary for a suspected breach of confidentiality, without an inquiry.",Confidentiality,Risky
+"During employment, the Employee shall not work for any other organisation, whether paid or unpaid, without prior written approval.",Non-compete,Normal
+"For six months after leaving, the Employee shall not solicit any client the Employee directly handled at the Company.",Non-compete,Normal
+"For twelve months after leaving, the Employee shall not persuade any Company employee to resign.",Non-compete,Normal
+The Employee shall disclose any business interest that may conflict with the Company's interests.,Non-compete,Normal
+"The Employee shall not join any company in the same industry anywhere in the world for three years after leaving.",Non-compete,Risky
+"After resignation, the Employee shall not start any business of their own for two years.",Non-compete,Risky
+"If the Employee joins a competitor within two years, the Employee shall pay the Company Rs. 5,00,000 as damages.",Non-compete,Risky
+The Employee shall not work for any client of the Company for five years after leaving.,Non-compete,Risky
+"The Employee shall be on probation for six months, during which either party may terminate with fifteen days' notice.",Termination,Normal
+"After confirmation, either party may end employment by giving sixty days' notice or salary in lieu of notice.",Termination,Normal
+"The Company may terminate employment immediately for proven serious misconduct such as fraud or theft, after an inquiry.",Termination,Normal
+"The Company may extend the probation period indefinitely at its sole discretion.",Termination,Risky
+"The Employee must serve a notice period of 180 days, and the Company will not accept early release under any circumstances.",Termination,Risky
+"If either party breaches the agreement, the other party shall give written notice and allow 30 days to remedy the breach.",Termination,Normal
+"If the licence fee is unpaid for two consecutive months, the Licensor may terminate after giving 30 days' written notice.",Termination,Normal
+"If the Licensee fails to vacate on expiry, the Licensee shall pay a holding-over charge of one month's licence fee for every day of delay.",Termination,Risky
+The Licensor shall refund the deposit within 15 days of vacating; delayed refunds shall carry 12% annual interest.,Deposit,Normal
+"Working hours shall be 9 hours per day, five days a week, with overtime paid as per company policy.",Salary,Normal
+"The Employee shall work whatever hours the manager decides, including weekends, without any extra pay.",Salary,Risky
