@@ -6,3 +6,4 @@ chroma_db/
 app/model_clause_type/
 app/model_risk/
 *.zip
+.DS_Store

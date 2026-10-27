@@ -5,3 +5,5 @@ pdfplumber>=0.11
 python-dotenv
 jupyter
 matplotlib
+chromadb
+google-genai
