@@ -8,3 +8,8 @@ matplotlib
 chromadb
 google-genai
 openai
+fastapi
+uvicron
+python_multipart
+streamlit
+requests
