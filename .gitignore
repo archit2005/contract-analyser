@@ -7,3 +7,4 @@ app/model_clause_type/
 app/model_risk/
 *.zip
 .DS_Store
+data/my_agreement.pdf
