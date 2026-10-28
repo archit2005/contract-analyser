@@ -1,7 +1,6 @@
 # app/rag.py - RAG pipeline: store documents, search by meaning, answer with Gemini
 
 import os
-import re
 import pdfplumber
 import chromadb
 from chromadb.utils import embedding_functions
@@ -56,12 +55,6 @@ def chunk_text(text, size=800, overlap=150):
     return chunks
 
 
-def split_clauses(text):
-    """Split a contract into clauses at numbers like '1.' or '2)' at the start of a line."""
-    parts = re.split(r"\n\s*(?=\d{1,2}[.)]\s)", "\n" + text)
-    return [p.strip().replace("\n", " ") for p in parts if len(p.strip()) > 30]
-
-
 # ---------- Building the knowledge stores ----------
 def add_in_batches(col, ids, docs, metas, batch=100):
     for i in range(0, len(ids), batch):
@@ -89,19 +82,27 @@ def build_law_library(folder="data/laws"):
         print(f"Added {len(docs)} chunks from {act}")
 
 
-def index_contract(text, doc_id):
-    """Split one user's contract into clauses and store them in their own collection."""
+def index_contract(clauses, doc_id, labels=None):
+    """Store one contract's clauses (and their labels, if given) in their own collection."""
     name = f"contract_{doc_id}"
     try:
         db.delete_collection(name)      # start fresh if this document was indexed before
     except Exception:
         pass
     col = get_collection(name)
-    clauses = split_clauses(text)
+
+    metas = []
+    for i in range(len(clauses)):
+        meta = {"clause_no": i + 1}
+        if labels:                                   # add DistilBERT's labels if we have them
+            meta["type"] = labels[i]["type"]
+            meta["risk"] = labels[i]["risk"]
+        metas.append(meta)
+
     add_in_batches(col,
                    ids=[f"c{i + 1}" for i in range(len(clauses))],
                    docs=clauses,
-                   metas=[{"clause_no": i + 1} for i in range(len(clauses))])
+                   metas=metas)
     return clauses
 
 
@@ -157,8 +158,13 @@ def answer(question, doc_id):
     if not contract_hits and not law_hits:
         return "I couldn't find anything relevant in your document or the law library.", [], []
 
+    def clause_label(meta):
+        if "type" in meta:
+            return f"Clause {meta['clause_no']} – {meta['type']} – {meta['risk'].upper()}"
+        return f"Clause {meta['clause_no']}"
+
     contract_ctx = "\n".join(
-        f"[Clause {h['meta']['clause_no']}] {h['text']}" for h in contract_hits) or "Nothing relevant found."
+        f"[{clause_label(h['meta'])}] {h['text']}" for h in contract_hits) or "Nothing relevant found."
     law_ctx = "\n".join(
         f"[{h['meta']['source']}, page {h['meta']['page']}] {h['text']}" for h in law_hits) or "Nothing relevant found."
 
@@ -175,6 +181,7 @@ Rules:
   If no relevant law was found, write "No matching law was found in the library" under "The law says".
 - Cite clause numbers like [Clause 4] and law sources like [Act name, page X].
 - If a clause looks one-sided or unfair to the signer, point it out briefly.
+- Some clauses are tagged RISKY by an automatic classifier. Mention this when relevant, but explain the reason in your own words from the clause text.
 - Use simple English that a non-lawyer can understand.
 - End with: "This is general information, not legal advice."
 

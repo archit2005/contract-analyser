@@ -1,9 +1,10 @@
 from app.rag import build_law_library, index_contract, answer
+from app.parser import split_clauses
 
 build_law_library()                                   # runs once; reuses it after that
 
 text = open("data/sample_agreement.txt").read()
-clauses = index_contract(text, doc_id="sample")
+clauses = index_contract(split_clauses(text), doc_id="sample")
 print(f"Indexed {len(clauses)} clauses\n")
 
 questions = [
@@ -23,7 +24,7 @@ for q in questions:
 
 print("\n========== OFFER LETTER TEST ==========\n")
 offer = open("data/sample_offer_letter.txt").read()
-offer_clauses = index_contract(offer, doc_id="offer")
+offer_clauses = index_contract(split_clauses(offer), doc_id="offer")
 print(f"Indexed {len(offer_clauses)} clauses\n")
 
 offer_questions = [
