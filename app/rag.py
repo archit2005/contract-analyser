@@ -7,15 +7,31 @@ import chromadb
 from chromadb.utils import embedding_functions
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
+from openai import OpenAI
 
 load_dotenv()
-GEMINI_MODEL = "gemini-3.8-flash"   # change to the model name shown in AI Studio
+# LLMs to try, in order. If one fails, the next one is used.
+LLM_CHAIN = [
+    ("gemini", "gemini-3.8-flash"),
+    ("groq",   "openai/gpt-oss-120b"),
+    ("groq",   "qwen/qwen3.8-27b"),
+    ("groq",   "openai/gpt-oss-20b"),
+]
 THRESHOLD = 0.25                    # minimum similarity to count as "relevant"
 
 # ---------- Setup ----------
 db = chromadb.PersistentClient(path="chroma_db")              # saves data in a folder
 embed = embedding_functions.DefaultEmbeddingFunction()        # text -> meaning codes (MiniLM)
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))    # Gemini connection
+gemini_client = genai.Client(
+    api_key=os.getenv("GEMINI_API_KEY"),
+    http_options=types.HttpOptions(timeout=120_000),  # give up after 120 seconds
+)
+groq_client = OpenAI(
+    api_key=os.getenv("GROQ_API_KEY"),
+    base_url="https://api.groq.com/openai/v1",        # Groq's OpenAI-style address
+    timeout=60,                                       # seconds
+)
 
 
 def get_collection(name):
@@ -102,6 +118,37 @@ def search(collection_name, question, k=3):
     return [h for h in hits if h["score"] >= THRESHOLD]
 
 
+# ---------- LLM calls with fallback ----------
+def ask_gemini(model, prompt):
+    response = gemini_client.models.generate_content(model=model, contents=prompt)
+    return response.text
+
+
+def ask_groq(model, prompt):
+    response = groq_client.chat.completions.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,                  # low = more factual, less creative
+    )
+    return response.choices[0].message.content
+
+
+def call_llm(prompt):
+    """Try each LLM in LLM_CHAIN until one answers."""
+    for provider, model in LLM_CHAIN:
+        try:
+            if provider == "gemini":
+                text = ask_gemini(model, prompt)
+            else:
+                text = ask_groq(model, prompt)
+            if text:                                  # got a real answer
+                print(f"[LLM] answered by {provider}/{model}")
+                return text
+        except Exception as e:                        # retired, rate-limited, busy, timeout...
+            print(f"[LLM] {provider}/{model} failed: {str(e)[:120]}")
+    return "Sorry, the AI service is unavailable right now. Please try again in a minute."
+
+
 # ---------- Augment + Generate (the A and G in RAG) ----------
 def answer(question, doc_id):
     contract_hits = search(f"contract_{doc_id}", question)
@@ -139,5 +186,5 @@ APPLICABLE LAW:
 
 QUESTION: {question}"""
 
-    response = client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
-    return response.text, contract_hits, law_hits
+    reply = call_llm(prompt)
+    return reply, contract_hits, law_hits
