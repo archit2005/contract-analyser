@@ -1,0 +1,9 @@
+pdfplumber>=0.11
+python-dotenv
+chromadb
+google-genai
+openai
+fastapi
+uvicorn
+python-multipart
+transformers

@@ -1,9 +1,10 @@
 # ui/streamlit_app.py - the website: upload, risk report, chat
 
+import os
 import requests
 import streamlit as st
 
-API = "http://127.0.0.1:8000"
+API = os.getenv("API_URL", "http://127.0.0.1:8000")
 
 st.set_page_config(page_title="Contract Analyzer", page_icon="📄", layout="wide")
 st.title("📄 Contract Analyzer")

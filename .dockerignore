@@ -1,0 +1,10 @@
+venv/
+.env
+.git/
+chroma_db/
+__pycache__/
+*.pyc
+notebooks/
+*.zip
+.DS_Store
+data/my_agreement.pdf

@@ -1,0 +1,11 @@
+# Website container: Streamlit only (no models needed here)
+FROM python:3.13-slim
+
+WORKDIR /code
+RUN pip install --no-cache-dir streamlit requests
+
+COPY ui/ ui/
+
+EXPOSE 8501
+CMD ["python", "-m", "streamlit", "run", "ui/streamlit_app.py", \
+     "--server.address=0.0.0.0", "--server.port=8501", "--server.headless=true"]

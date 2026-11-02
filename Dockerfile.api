@@ -1,0 +1,18 @@
+# Backend container: FastAPI + DistilBERT + ChromaDB + LLM calls
+FROM python:3.13-slim
+
+WORKDIR /code
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+
+# 1. Install libraries (CPU-only PyTorch keeps the image much smaller)
+COPY requirements-api.txt .
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu \
+ && pip install --no-cache-dir -r requirements-api.txt
+
+# 2. Copy the code, the trained models and the law PDFs
+COPY app/ app/
+COPY data/laws/ data/laws/
+
+# 3. Start the API
+EXPOSE 8000
+CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

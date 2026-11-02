@@ -9,7 +9,9 @@ chromadb
 google-genai
 openai
 fastapi
-uvicron
-python_multipart
+uvicorn
+python-multipart
 streamlit
 requests
+torch
+transformers
